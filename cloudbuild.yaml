@@ -1,0 +1,6 @@
+steps:
+  - name: gcr.io/cloud-builders/gsutil
+    args: ["-m", "rsync", "-r", "-c", "-d", ".", "gs://epstein.consulting"]
+  - name: gcr.io/cloud-builders/gsutil
+    args: ["-m", "rm", "-rf", "gs://epstein.consulting/.git", "gs://epstein.consulting/.gitignore"]
+
