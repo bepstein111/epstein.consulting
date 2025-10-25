@@ -71,7 +71,7 @@ h3 {
 	position: fixed;
 	left: 5%;
 	bottom: 0;
-	height: 120px;
+	height: 190px;
 	width: 90%;
 	color: #fff;
 	background-color: #009688;
@@ -103,8 +103,9 @@ h3 {
 	</h1>
 	<br>
 	<p>More to come soon...&nbsp;</p>
-	<p>&nbsp;</p>
 <p>For now, shoot me an email or call/text<br> me for info regarding services!<br>Contact info down below.&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
 <script>
 	// This script will change the email address in the footer based on the domain name
 	// Wait for the DOM to be fully loaded before executing the script
@@ -120,14 +121,18 @@ document.addEventListener('DOMContentLoaded', function() {
 	  document.querySelector('.footer').innerHTML = `
 		Contact:<br>
 		e: ben@epstein.consulting<br>
-		c: 203 718-8955<br>
+		desk: 617 690-TECH<br>
+		cell: 747 777-3105<br>
+        emergency: 860 6000-911<br>
 	  `;
 	} else if (currentDomain.includes('beptech.net')) {
 	  // If on beptech.net domain
 	  document.querySelector('.footer').innerHTML = `
 		Contact:<br>
 		e: ben@beptech.net<br>
-		c: 203 718-8955<br>
+		desk: 617 690-TECH<br>
+		cell: 747 777-3105<br>
+        emergency: 860 6000-911<br>
 	  `;
 	} else {
 	  // Default case (show both or choose a default)
@@ -135,7 +140,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		Contact:<br>
 		e: ben@epstein.consulting<br>
 		e: ben@beptech.net<br>
-		c: 203 718-8955<br>
+		desk: 617 690-TECH<br>
+		cell: 747 777-3105<br>
+        emergency: 860 6000-911<br>
 	  `;
 	}
   });
